@@ -1,36 +1,109 @@
 @defaultPadding: 17px 15px;
 @introBannerBg : #47c668;
 
+body {
+    background: rgb(228, 228, 229) url('../img/malawi-outline-trans-50.png');
+}
+
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
 .heroqa {
-    font-size: 4.5em;
-    display: block;
+    color: #fff;
     text-align: center;
+    background: @introBannerBg;
+    display: block;
+    
+    padding:0 10px;
+    .title {
+        font-size: 3.5em;
+    }
+    .interview-meta {
+        text-align: right;
+    }
+}
+
+.interview-meta {
+    color: #fff;
+    background: @introBannerBg;
 }
 
 .interview-wrapper {
-    
     font-family: Karla, serif;
+    background: #fff;
+    
+    height: 100%;
+    display: block;
+    
+    box-shadow: 0px 0x 2px rgba(0, 0, 0, 0.8);
     .meta-intro {
     
     }
     
     .interviewee-profile-block {
-        
-        background: @introBannerBg;
-        color: #fff;
-        padding: 10px 20px;
+        background: rgb(0, 0, 0);
+        background-image: url('../img/malawi-outline-trans.png');
+        padding: 50px;
+        .detail {
+            background: rgba(12, 167, 215, 0.58);
+            color: #fff;
+            padding: 10px 20px;
+        }
     }
 }
 
 .interview-body {
 
+    padding: 15px;
+    
     .question {
         // border-left: 3px solid rgba(200, 200, 200, 0.345);
+        padding: 5px;
+        margin: 4px;
     }
 
     .answer {
-        border-left: 3px solid rgba(200, 200, 200, 0.345);
+        border-left: 3px solid  @introBannerBg;
+        margin: 4px;
         margin-left: 10px;
         padding: @defaultPadding;
+        width: 100%;
+        .image-block {
+            float: right;
+            clear: both;
+        }
+    }
+    
+    .image-block {
+        img {
+            box-shadow: 0px 0px 2px rgba(20, 20, 20, 0.5);
+            background: #fff;
+        }
+    }
+}
+
+.interviewee-social {
+    background: #3280e9;
+    display: block;
+    color: #fff;
+    padding: 20px;
+    
+    .social-sites {
+        div {
+            display: inline-block;
+        }
+        
+        a {
+            background: rgba(255, 255, 255, 0.0287);
+            display: block;
+            padding: 10px;
+            width: 1em;
+            height: 1em;
+            font-size: 1.6em;
+            text-decoration: none;
+            color: #fff;
+        }
     }
 }
